@@ -1,3 +1,6 @@
 /virt/
 /ecom/ecom/settings.py
 /ecom/db.sqlite3
+/ecom/cart/migrations/
+/ecom/store/migrations/
+.idea/
