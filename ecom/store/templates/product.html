@@ -38,13 +38,18 @@
                                                 <h5 class="fw-bolder">{{ product.name }}</h5>
                                                 <!-- Product price-->
                                                 ${{ product.price }}
-                                                <br/>
+                                                <br/>ID: {{ product.id }}
 
                                             </div>
                                         </div>
                                     {% endif %}
 
-                                    <a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
+                                    <a href="{% url 'home' %}" class="btn btn-secondary">
+                                        Home
+                                    </a>
+                                    <button class="btn btn-secondary" value="{{ product.id }}" id="add-cart">
+                                        Add to cart
+                                    </button>
                                 </center>
                             </div>
                         </div>
@@ -52,5 +57,9 @@
                 </div>
             </div>
 
+
+<script>
+<!--    Chack if button press-->
+</script>
 
 {% endblock %}
