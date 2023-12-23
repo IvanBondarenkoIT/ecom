@@ -59,13 +59,13 @@
 
 
 <script>
-<!--    Chack if button press-->
+<!--    Check if button press-->
     $(document).on('click','#add-cart',function(e){
         e.preventDefault();
         $.ajax({
             type: 'POST',
             url: '{% url 'cart_add' %}',
-            date: {
+            data: {
                 product_id: $('#add-cart').val(),
                 csrfmiddlewaretoken: '{{ csrf_token }}',
                 action: 'post'
